@@ -1,0 +1,10 @@
+langchain
+ipykernel
+langchain-community
+langchain-qdrant
+langchain-huggingface
+langchain-groq
+qdrant-client
+sentence-transformers
+python-docx
+streamlit
