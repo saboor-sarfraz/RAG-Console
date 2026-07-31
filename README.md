@@ -4,7 +4,7 @@ A high-performance, modular **Retrieval-Augmented Generation (RAG)** pipeline an
 
 ---
 
-## 🚀 System Architecture & Workflow
+## System Architecture & Workflow
 
 The pipeline utilizes a multi-stage retrieval architecture designed for high precision and minimal distraction.
 
@@ -45,7 +45,7 @@ graph TD
 
 ---
 
-## 🌟 Key Features
+## Key Features
 
 ### 1. Multi-Format High-Fidelity Document Ingestion
 *   **FAQ Segmenter:** A custom chunker that combines `MarkdownHeaderTextSplitter` with regex markers (`**Q:`) to isolate distinct Q&A pairs.
@@ -61,12 +61,18 @@ graph TD
 An elegant interface featuring real-time latency telemetry, adjustable retrieval parameters, and a side-by-side comparison panel for raw vector matches vs. cross-encoder reranked documents.
 
 <p align="center">
-  <img src="assets/dashboard_screenshot.png" alt="RAG Playground Pro Dashboard Screenshot" width="900" style="border-radius: 10px; box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);" />
+  <img src="assets\Screenshot 2026-07-31 183458.png" alt="RAG Playground Pro Dashboard Screenshot" width="900" style="border-radius: 10px; box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);" />
+</p>
+<p align="center">
+  <img src="assets\Screenshot 2026-07-31 183329.png" alt="RAG Playground Pro Dashboard Screenshot" width="900" style="border-radius: 10px; box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);" />
+</p>
+<p align="center">
+  <img src="assets\Screenshot 2026-07-31 183254.png" alt="RAG Playground Pro Dashboard Screenshot" width="900" style="border-radius: 10px; box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);" />
 </p>
 
 ---
 
-## 📂 Project Directory Structure
+## Project Directory Structure
 
 ```text
 ├── Dataset/                              # Raw source documentation
@@ -84,7 +90,7 @@ An elegant interface featuring real-time latency telemetry, adjustable retrieval
 
 ---
 
-## 🛠️ Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 *   Python 3.10+
@@ -134,7 +140,7 @@ Once running, navigate to `http://localhost:8501` to use the dashboard!
 
 ---
 
-## 🧩 Code Modules Walkthrough
+## Code Modules Walkthrough
 
 *   **`app.py`**: Manages frontend interactive state variables, controls parameters like retrieval `top_k`, and displays metrics cards alongside raw source comparison modules.
 *   **`retrieval.py`**: Interacts with the `QdrantVectorStore` from LangChain, fetches raw similarities, and invokes the reranking interface.
